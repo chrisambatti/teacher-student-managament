@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+    <link rel="stylesheet" href="{% static 'Student-Registration.css' %}">
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+
+<body>
+
+    <header class="header" style="background-color: white;">
+        <nav class="nav-items" style="background-color: white;">
+            <a href="home"><img src="{% static 'img/download.jpg' %}" style="width:100%; background-color:white;"></a>
+        </nav>
+    </header>
+
+
+    <h2 class="login">Login Page</h2>
+    <main>
+        <div class="container">
+            <form method="post">
+                {% csrf_token %}
+                <label for="uname"><b>Username</b></label>
+                <input type="text" id="username" placeholder="Enter Usename" name="username" required>
+                <label for="pwrd"><b>Password</b></label>
+                <input type="text" id="password" placeholder="Enter Password" name="password" required>
+                <button type="submit">Login</button><br>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember Me
+                </label>
+                <a href="sregister">Register</a>
+            </form>
+
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>

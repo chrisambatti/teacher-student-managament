@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    {% load bootstrap5 %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+    <main class="info">
+        <h2>Welcome {{data.firstname}} {{data.lastname}}</h2>
+    </main>
+ 
+    <div class="card">
+        <div class="card-header">
+            <img src="{% static 'img/profile-picture.jpg' %}" width="20%" alt="">
+            <h2>Welcome {{data.firstname}} {{data.firstname}}</h2>
+        </div>
+    <button type="button" style="text-decoration: none;"><a href="tassignment" style="text-decoration: none; font-size:15px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align:center; margin:20px; padding:15px;">Assignment Section</a></button>
+</body>
+</html>

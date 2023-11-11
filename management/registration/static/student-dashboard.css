@@ -1,0 +1,19 @@
+
+.output{
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+  .details img{
+    margin: left 30px;;
+  }
+  .details {
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+  }
